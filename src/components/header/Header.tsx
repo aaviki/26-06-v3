@@ -7,11 +7,11 @@ export function Header() {
   const { logedUser } = useContext(LogedUserContext);
 
   return (
-    <>
+    <div className="header">
       <Navigation />
-      {hasUser && <p>Hello, {sessionStorage.getItem('username')}!</p>}
+      {hasUser && <span className="hello" style={{/* backgoundColor:"red" */}}>Hello, {sessionStorage.getItem('username')}!</span>}
       {/* <p>Hello, {logedUser}!</p> */}
       <hr />
-    </>
+    </div>
   );
 }

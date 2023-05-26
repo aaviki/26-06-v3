@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { UserContext, LogedUserContext } from "../../../contexts/userContext";
-
+import { useDispatch, useSelector } from 'react-redux';
 export function Login() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -39,13 +39,19 @@ export function Login() {
     }
     setHasUser(true);
     e.currentTarget.reset();
+    // dispatch(setHasUserReducer({ payload: { hasUser: true }, type: 'SET HAS USER' }))
+
+    // if(hasUser){
+    navigate('/')
+    // }
+    // {hasUser && navigate('/')}
+
     sessionStorage.setItem('username', username)
   };
 
   return (
     <>
       <h1>Login Here</h1>
-      {hasUser && <h1>Hello, {sessionStorage.getItem('username')}!</h1>}
       <form onSubmit={onLogin}>
         <div>
           <label htmlFor="username">Username:</label>

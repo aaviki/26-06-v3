@@ -1,15 +1,10 @@
 import { useEffect, useState } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { postsService } from "../../services/postsService";
 import { Post } from "../post/Post";
-// import { PostInterface } from "../../interfaces/postsInterface";
+import { PostInterface } from "../../interfaces/postsInterface";
 
-export interface PostInterface {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+
 
 export function Search() {
   const [posts, setPosts] = useState([]);
@@ -17,9 +12,7 @@ export function Search() {
   const [results, setResults] = useState([]);
   const [isLoadng, setIsLoading] = useState(true);
   const [searchParams, setSsearchParams] = useSearchParams("");
-  const navigate = useNavigate();
-  // const searchInput = String(FormData.get("searchInput"));
-
+ 
   useEffect(() => {
     postsService
       .getAllPosts()
@@ -36,13 +29,7 @@ export function Search() {
     );
   }, [searchParams]);
 
-  // useEffect(() => {
-  //   if (results.length > 0) {
-  //     navigate("/posts", {
-  //       state: results,
-  //     });
-  //   }
-  // }, [results]);
+
 
   return (
     <>

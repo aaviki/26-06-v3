@@ -15,10 +15,10 @@ import { Posts } from "./components/pages/posts/Posts";
 import { Notfound } from "./components/pages/not-found/Notfound";
 import { Login } from "./components/pages/login/Login";
 import { Register } from "./components/pages/register/Register";
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore,pro } from "@reduxjs/toolkit";
 import userReducer from "./redux/userReducer";
-import { Provider } from "react-redux";
 import { UserContext } from "./contexts/userContext";
+import {Provider} from 'react-redux'
 
 const store = configureStore({
   reducer: {
@@ -44,11 +44,14 @@ function App() {
   );
 
   return (
+   <Provider store={store}>
     <UserContext.Provider value={{ hasUser, setHasUser }}>
       <div className="App">
         <RouterProvider router={browserRouter} />
       </div>
     </UserContext.Provider>
+       </Provider>
+    
   );
 }
 
