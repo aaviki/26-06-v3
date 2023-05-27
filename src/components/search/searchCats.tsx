@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import{catsService}from "../../services/catsService"
 import { CatInterface } from "../../interfaces/catInterface";
+// import { Cat } from "../cat";
 import Cat1 from "../cat/Cat1";
-// import { Cat } from "../Cat";
 
 export function SearchCats() {
   const [cats, setCats] = useState([]);

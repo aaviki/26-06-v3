@@ -1,3 +1,5 @@
+
+
 export function Home() {
   return (
     <>
@@ -5,13 +7,13 @@ export function Home() {
       <img src="/img/cats/640-a-beautiful-domestic-cat-is-resting-in-a-light-warm-room-a-gray-shorthair-cat-with-green-eyes-looking-at-the-camera.jpg" alt="cat"/> */}
       
     <div>
+      <div><h1>Thai grimalkin</h1></div>
       <picture>
-        <img src="/img/15080931_v567-mynt-doodles-01.jpg " alt="cats"/>
+        <img className="img-head" src={"https://static.scientificamerican.com/sciam/cache/file/9CAE9C60-8BC5-4CA3-95C180EFACDD99FD_source.jpg" } alt="cats"/>
       </picture>
-      <div><h2>Thai grimalkin</h2>
-      <strong>Kitten maine coon</strong></div>
+      <div>
+        <h3>Kitten maine coon</h3>
       <p>
-        <img className="img-head" src="img/cats/640-a-beautiful-domestic-cat-is-resting-in-a-light-warm-room-a-gray-shorthair-cat-with-green-eyes-looking-at-the-camera.jpg" alt="cat"></img>Cat ipsum dolor sit amet, manx. Persian
         balinese yet tabby so siamese american shorthair yet manx. Malkin.
         Leopard
         sphynx egyptian mau so kitty. Kitten maine coon for tom ocelot manx cornish rex. Himalayan bobcat or puma.
@@ -28,6 +30,8 @@ export function Home() {
         siamese
         yet russian blue. Munchkin persian sphynx. Mouser. Russian blue.
       </p>
+      {/* <img className="img-round" src={"https://images.indianexpress.com/2022/10/cat-1200.jpg"} alt="cat"></img>Cat ipsum dolor sit amet, manx. Persian */}
+      </div>
       </div>
      
     </>

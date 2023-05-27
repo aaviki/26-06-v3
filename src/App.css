@@ -26,29 +26,25 @@ a{
   text-align: center;
 }
 
-/* .cat{
-  background-color: transparent;
-} */
-.cat img{
-  height: 100px;
+.cat{
+  margin: 50px auto;
+  padding: 20px;
+width: 50%;
+-webkit-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+}
+/* .cat img{
+  /* height: 100px; */
   width: 100px;
   border: 3px solid #0ff;
   /* background: url(/img/15080931_v567-mynt-doodles-01.jpg);
   background-size: cover; */
   /* background-color: blueviolet; */
-}
+/* } */ */
 
 .hello{
   margin: 0px 20px;
-}
-.img-head{
-  padding: 4em;
-  /* border-radius: 2vw; */
-  object-fit: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
 }
 
 .main{
@@ -68,4 +64,54 @@ a{
   height: 500px;
   width: 300px;
   background-color: rgba(0, 170,170, 0.7);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.img-round{
+  width: 200px;
+ height: 200px;
+ padding: 5px;
+ /* border-radius: 2vw; */
+ object-fit: 50%;
+ border-radius: 100px;
+ -webkit-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+ -moz-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+ box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+}
+
+.img-head{
+ width: 100%;
+margin: 20px;
+-webkit-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+box-shadow: 5px 5px 31px -5px rgba(0, 0, 0, 0.75);
+}
+.pic-bio{
+  display: flex;
+}
+
+.img-bio{
+  align-self: flex-start;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  border:
 }

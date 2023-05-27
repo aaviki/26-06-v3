@@ -2,7 +2,7 @@ import { useState } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import { Home } from "./components/pages/home/Home";
-import { Details } from "./components/pages/details/Details";
+import { Details } from "./components/pages/details/CatsDetails";
 import { Root } from "./Root";
 import {
   createBrowserRouter,
@@ -10,8 +10,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-// import { Items } from "./components/pages/items/Items";
-// import { Posts } from "./components/pages/posts/Posts";
+import { Items } from "./components/pages/items/Items";
+import { Posts } from "./components/pages/posts/Posts";
 import { Notfound } from "./components/pages/not-found/Notfound";
 import { Login } from "./components/pages/login/Login";
 import { Register } from "./components/pages/register/Register";
@@ -20,7 +20,6 @@ import { UserContext } from "./contexts/userContext";
 import {Provider} from 'react-redux'
 import { configureStore } from "@reduxjs/toolkit";
 import{Cats}from './components/cats/Cats.tsx'
-import { Posts } from "./components/pages/posts/Posts";
 
 const store = configureStore({
   reducer: {

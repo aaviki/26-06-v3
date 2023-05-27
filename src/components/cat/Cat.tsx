@@ -40,11 +40,13 @@ function Cat(props:any) {
   return (
     <div className="cat">
         {/* <button>{props.children}</button> */}
+      <img className="img-bio" src={img} alt="Cat" />
       <h2>{name}</h2>
       <p>{owner}</p>
-      <p>{title}</p>
+      <h3>{title}</h3>
       <p>{bio}</p>
-      <img src={img} alt="Cat" />
+      <picture className="pic-bio">
+      </picture>
     </div>
   );
 }
