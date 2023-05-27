@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import{catsService}from "../../services/catsService"
 import { CatInterface } from "../../interfaces/catInterface";
+import Cat1 from "../cat/Cat1";
 // import { Cat } from "../Cat";
 
 export function SearchCats() {
@@ -45,9 +46,9 @@ export function SearchCats() {
       {!error && !isLoadng && results.length > 0 && (
         <>
           <h3>Results</h3>
-          {/* {results.map((el) => (
-            <Cat cat={el} key={el["id"]} />
-          ))} */}
+          {results.map((el) => (
+            <Cat1 cat={el} key={el["id"]} />
+          ))}
         </>
       )}
 

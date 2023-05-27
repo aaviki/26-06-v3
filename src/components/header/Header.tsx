@@ -11,7 +11,6 @@ export function Header() {
       <Navigation />
       {hasUser && <span className="hello" style={{/* backgoundColor:"red" */}}>Hello, {sessionStorage.getItem('username')}!</span>}
       {/* <p>Hello, {logedUser}!</p> */}
-      <hr />
-    </div>
+        </div>
   );
 }

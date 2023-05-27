@@ -13,6 +13,10 @@
   
   }
 
+  .main-container{
+    margin: 10%;
+     }
+
 .footer{
 /* margin: 10px; */
 padding: 10px;
@@ -20,9 +24,6 @@ padding: 10px;
 width: 100%;
 height: 40px;
 bottom: 0;
-background-color: #0aa;
+background-color: rgba(0, 170,170, 1)/* #00aaaa */;
 }
 
-.main{
-    margin-top: 50px;
-}

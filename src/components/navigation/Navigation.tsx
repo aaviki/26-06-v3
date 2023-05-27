@@ -13,8 +13,8 @@ function Navigation() {
     <>
     <nav className={styles.navigation}>
       <Link to="/">Home</Link>
-          <Link to="/items">Items</Link>
-          <Link to="/items/:id">Details</Link>
+          {/* <Link to="/items">Items</Link> */}
+          <Link to="/cats">Cats</Link>
     {!hasUser &&
                 <>
                     <Link to="/login">Login</Link>
@@ -23,7 +23,7 @@ function Navigation() {
             }
       {hasUser &&
                 <>
-                <Link to="/posts">Posts</Link>
+                <Link to="/cats/:id">Details</Link>
                 <Link to="/" onClick={()=>{setHasUser(false);console.log(hasUser); sessionStorage.removeItem('username')
                 }}>Logout</Link>
                 </>

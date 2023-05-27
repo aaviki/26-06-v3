@@ -9,7 +9,7 @@ export function Root() {
       <div className="header">
       <Header />
       </div>
-      <div className="main">
+      <div className="main-container">
       <Outlet />
       </div>
       <div className="footer">
