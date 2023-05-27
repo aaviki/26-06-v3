@@ -3,12 +3,12 @@
 // import { catsService } from "../services/catsService";
 // import { CatInterface } from "../interfaces/catInterface";
 
-interface CatProps {
+// interface CatProps {
   // cat: CatInterface;
-}
+// }
 
-export function Cat(props: CatProps) {
-  console.log(props);
+// export function Cat(props: CatProps) {
+  // console.log(props);
 
   // const [status, setStatus] = useState(false);
   // const [item, setItem] = useState();
@@ -24,10 +24,29 @@ export function Cat(props: CatProps) {
   //   });
   // };
 
+//   return (
+//     <div className={`${styles.catClass} ${styles.test}`}>
+//       {<h2>Name: {props.cat.name} </h2>}
+//       {<button onClick={redirectToDetails}>Show details</button>}
+//     </div>
+//   );
+// }
+
+import "../../App.css"
+
+function Cat(props:any) {
+  const { name, img, owner, title, bio } = props.cat;
+  console.log(props);
   return (
-    <div /* className={`${styles.catClass} ${styles.test}`} */>
-      {/* <h2>Name: {props.cat.name} </h2> */}
-      {/* <button onClick={redirectToDetails}>Show details</button> */}
+    <div className="cat">
+        {/* <button>{props.children}</button> */}
+      <h2>{name}</h2>
+      <p>{owner}</p>
+      <p>{title}</p>
+      <p>{bio}</p>
+      <img src={img} alt="Cat" />
     </div>
   );
 }
+
+export default Cat;

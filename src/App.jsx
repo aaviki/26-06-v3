@@ -15,12 +15,12 @@ import {
 import { Notfound } from "./components/pages/not-found/Notfound";
 import { Login } from "./components/pages/login/Login";
 import { Register } from "./components/pages/register/Register";
-// import { configureStore,pro } from "@reduxjs/toolkit";
 import userReducer from "./redux/userReducer";
 import { UserContext } from "./contexts/userContext";
 import {Provider} from 'react-redux'
 import { configureStore } from "@reduxjs/toolkit";
 import{Cats}from './components/cats/Cats.tsx'
+import { Posts } from "./components/pages/posts/Posts";
 
 const store = configureStore({
   reducer: {
@@ -37,7 +37,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/cats" element={<Cats />} />
         <Route path="/cats/:id" element={<Details />} />
-        {/* <Route path="/posts" element={<Posts />} /> */}
+        <Route path="/posts" element={<Posts />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Notfound />} />

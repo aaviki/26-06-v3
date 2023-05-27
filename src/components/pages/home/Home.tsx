@@ -3,13 +3,13 @@ export function Home() {
     <>
       {/* <h1>Home page here</h1>
       <img src="/img/cats/640-a-beautiful-domestic-cat-is-resting-in-a-light-warm-room-a-gray-shorthair-cat-with-green-eyes-looking-at-the-camera.jpg" alt="cat"/> */}
-       <div >
+      
     <div>
-      <h2>Thai grimalkin</h2>
-      <strong>Kitten maine coon</strong>
       <picture>
-        <img src="/img/15080931_v567-mynt-doodles-01.jpg " alt="cats"></img>
+        <img src="/img/15080931_v567-mynt-doodles-01.jpg " alt="cats"/>
       </picture>
+      <div><h2>Thai grimalkin</h2>
+      <strong>Kitten maine coon</strong></div>
       <p>
         <img className="img-head" src="img/cats/640-a-beautiful-domestic-cat-is-resting-in-a-light-warm-room-a-gray-shorthair-cat-with-green-eyes-looking-at-the-camera.jpg" alt="cat"></img>Cat ipsum dolor sit amet, manx. Persian
         balinese yet tabby so siamese american shorthair yet manx. Malkin.
@@ -29,7 +29,7 @@ export function Home() {
         yet russian blue. Munchkin persian sphynx. Mouser. Russian blue.
       </p>
       </div>
-      </div>
+     
     </>
   );
 }
